@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
                       'apk file path to install. Like /storage/emulated/0/demo/update.apk'),
               onChanged: (path) => _apkFilePath = path,
             ),
-            FlatButton(
+            TextButton(
                 onPressed: () {
                   onClickInstallApk();
                 },
@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
                   InputDecoration(hintText: 'URL for app store to launch'),
               onChanged: (url) => _appUrl = url,
             ),
-            FlatButton(
+            TextButton(
                 onPressed: () => onClickGotoAppStore(_appUrl),
                 child: Text('gotoAppStore'))
           ],
